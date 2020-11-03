@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No More Vote Lost</title>
+    <link rel="stylesheet" href="./css/design.css">
+    <script src="./js/jqeury-minified.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./img/logo.png" alt="NoMoreVoteLost">
+            <ul>
+                <li><div class="card">
+                    <img src="./img/logo.png" alt="profile" id="profile"><br>
+                    <span id="aadhar_no">Aadhar No. : 435086861313 </span><br>
+                    <span id="blockchain_address">Blockchain Address : 0x8FDe7767a4c7b1bCCe6517aE35eC05c2a371FDdb </span>
+                </div></li>
+                <li><div class="analyze">
+                    <video autoplay></video>
+                    <img src="" id="snapMatch">
+                    <canvas style="display:none;"></canvas>
+                    <script>
+                    const constraints = {
+                      video: true,audio: true
+                    };
+                    
+                    const video = document.querySelector('video');
+                    const img = document.querySelector('#snapMatch');
+                    const canvas = document.querySelector('canvas');
+
+
+                    navigator.mediaDevices.getUserMedia(constraints).
+                      then((stream) => {video.srcObject = stream});
+                      
+                        function snap(){
+                        canvas.width = video.videoWidth;
+                        canvas.height = video.videoHeight;
+                        canvas.getContext('2d').drawImage(video, 0, 0);
+                        // Other browsers will fall back to image/png
+                        img.src = canvas.toDataURL('image/webp');
+                        }
+
+                        setTimeout(() => { 
+                            snap();
+                         }, 10000);
+                    
+                    </script>
+                </div></li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="votecard">
+                <img id="symbol" src="./img/logo.png" alt="">
+                <span id="name">candidate 1</span>
+                <Button id="vote_btn">Vote</Button>
+            </div>
+            <div class="votecard">
+                <img id="symbol" src="./img/logo.png" alt="">
+                <span id="name">candidate 2</span>
+                <Button id="vote_btn">Vote</Button>
+            </div><br>
+            <div class="votecard">
+                <img id="symbol" src="./img/logo.png" alt="">
+                <span id="name">candidate 3</span>
+                <Button id="vote_btn">Vote</Button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.3.0/web3.min.js" integrity="sha512-ppuvbiAokEJLjOUQ24YmpP7tTaLRgzliuldPRZ01ul6MhRC+B8LzcVkXmUsDee7ne9chUfApa9/pWrIZ3rwTFQ==" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

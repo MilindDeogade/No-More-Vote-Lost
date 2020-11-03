@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No More Vote Lost</title>
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="./img/logo.png" alt="NoMoreVoteLost">
+            <ul>
+                <li>Vote Statistics</li>
+                <li>Voting Dates</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="left">
+                <Span class="left_txt">No More <br> Vote <br> Lost</Span>
+            </div>
+            <div class="right">
+                <span class="label">Enter Aadhar Card No. 
+                    <span class="note">(we have not access to adhhar API we are using Phone no. for OTP so please Enter Phone no Here.)</span>
+                </span>
+                <input type="text" placeholder="Enter Phone No. for Demo." id="phone_no">
+                <Button class="send_Otp" id="send" onclick="getValue()">Send OTP</Button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/central_app.js"></script>
+</body>
+</html>

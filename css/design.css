@@ -1,0 +1,143 @@
+        html, body {
+          background: white;
+          margin: 0;
+          overflow-x: hidden;
+        }
+        img {
+          width: 82px;
+        }
+        ul {
+          display: inline-flex;
+          list-style: none;
+          margin-top: 50px;
+        }
+        li {
+          padding: 4px;
+          margin: 0 16px 0px 16px;
+          text-align: center;
+          font-size: larger;
+        }
+        .section {
+          display: block;
+          background: linear-gradient(135deg, rgb(74, 76, 236) 0%, rgb(165, 240, 223) 100%);
+          padding: 16px;
+          border: 2px solid antiquewhite;
+          border-radius: 4px;
+          width: 95.5%;
+        }
+        .left {
+          width: 50%;
+          background: url(../img/logo.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        
+        .container{
+            background: linear-gradient(135deg, rgb(241, 202, 50) 0%, rgb(131, 249, 50) 100%);
+            margin: 0;
+            padding: 1vw;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            }
+            .header{
+            display: inline-flex;
+            width: 100%;
+            }
+            .left{
+            }
+            .left_txt{
+            display: block;
+            font-size: xxx-large;
+            margin: 12% 0 0 56%;
+            line-height: 108px;
+            color: whitesmoke;
+            }
+            .right{
+            width: 50%;
+            display: block;
+            }
+            .label{
+            margin: 136px 0 20px 0px;
+            display: block;
+            }
+            .note{
+            display: block;
+            font-size: small;
+            color: #4e4e4e;
+            }
+            #phone_no{
+            height: 28px;
+            padding: 2px;
+            border: 1px white;
+            border-style: groove;
+            border-radius: 4px;
+            margin: 0 0 22px 0px;
+            display: block;
+            width: 100%;
+            }
+            .send_Otp{
+    
+            height: 28px;
+            padding: 2px;
+            border: 1px white;
+            border-style: groove;
+            border-radius: 4px;
+            width: 100%;
+            margin: 0 0 0 2px;
+            background: linear-gradient(135deg, rgb(74, 76, 236) 0%, rgb(165, 240, 223) 100%);
+            }
+
+            #profile {
+              width: 64px;
+              image-orientation: from-image;
+              image-rendering: optimizespeed;
+              background: white;
+              height: 64px;
+              border: 2px groove cadetblue;
+              border-radius: 50%;
+            }
+
+            
+            video {
+              width: 152px;
+              border: 2px groove cadetblue;
+              border-radius: 8px;
+            }
+            
+            #snapMatch {
+              width: 128px;
+              border: 2px groove cadetblue;
+              border-radius: 8px;
+          }
+
+          
+.votecard {
+  width: 100%;
+  background: whitesmoke;
+  border: 2px groove darkorchid;
+  border-radius: 8px;
+  display: inline-flex;
+  margin: 0px;
+  padding: 8px;
+}
+#symbol {
+  width: 82px;
+}
+#name {
+  font-size: xx-large;
+  margin: 38px 0 0 38px;
+  width: 70%;
+}
+#vote_btn {
+  width: 128px;
+  height: 64px;
+  border: 1px groove blue;
+  border-radius: 10px;
+  float: right;
+  margin: 24px 0 0 96px;
+  background: linear-gradient(135deg, rgb(50, 160, 241) 0%, rgb(66, 50, 249) 100%);
+  font-size: x-large;
+  color: whitesmoke;
+}
